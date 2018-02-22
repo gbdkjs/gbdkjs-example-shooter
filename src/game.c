@@ -320,12 +320,12 @@ void game_loop()
     player_pos.y = 120;
   }
 
-  // Update sprites (every 8 frames)
+  // Update sprites (every 16 frames)
   if((time&0xF)==0) {
     update_sprites();
   }
 
-  // Spawn enemy (every 8 frames)
+  // Spawn enemy (every 32 frames)
   if((time&0x1F)==0) {
     spawn_enemy();
   }
